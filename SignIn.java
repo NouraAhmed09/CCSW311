@@ -148,7 +148,7 @@ public class SignIn extends JFrame{
 
                         isFlag = false;
 
-                        new Store();
+                        new HomePage();
 
                     }
 
