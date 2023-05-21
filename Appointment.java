@@ -37,6 +37,7 @@ public class Appointment extends JFrame{
 
         buttonSubmit.setBackground(Color.decode("#4894fe"));
         buttonSubmit.setForeground(Color.white);
+        
         buildID();
         buildDates();
 
@@ -74,6 +75,8 @@ public class Appointment extends JFrame{
         datesPanel.add(Date2);
         datesPanel.add(Date3);
         datesPanel.add(Date4);
+        datesPanel.add(panelID);
+        
 
         buttonSubmit.addActionListener(new ActionListener() {
             @Override
@@ -134,4 +137,4 @@ public class Appointment extends JFrame{
 
     }
 }
-    
+
