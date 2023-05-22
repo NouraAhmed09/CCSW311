@@ -26,13 +26,13 @@ public class Department extends JFrame {
         setSize(700, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout(FlowLayout.CENTER,40,50));
-       getContentPane().setBackground(Color.decode("#f0f4f7"));
+       getContentPane().setBackground(Color.decode("#7CACC2"));
         setLocationRelativeTo(null);
 
         label.setFont(new Font("Serif",Font.BOLD,30));
-        PHButton.setBackground(Color.decode("#4894fe"));
+        PHButton.setBackground(Color.decode("#5B5B5B"));
         PHButton.setForeground(Color.white);
-        REHButton.setBackground(Color.decode("#4894fe"));
+        REHButton.setBackground(Color.decode("#5B5B5B"));
         REHButton.setForeground(Color.white);
 
         add(image);
