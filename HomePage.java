@@ -29,13 +29,13 @@ public class HomePage extends JFrame {
         setSize(700, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout(FlowLayout.CENTER,40,50));
-       getContentPane().setBackground(Color.decode("#f0f4f7"));
+       getContentPane().setBackground(Color.decode("#7CACC2"));
         setLocationRelativeTo(null);
 
         label.setFont(new Font("Serif",Font.BOLD,30));
-        bookButton.setBackground(Color.decode("#4894fe"));
+        bookButton.setBackground(Color.decode("#5B5B5B"));
         bookButton.setForeground(Color.white);
-        BuyButton.setBackground(Color.decode("#4894fe"));
+        BuyButton.setBackground(Color.decode("#5B5B5B"));
         BuyButton.setForeground(Color.white);
 
         add(image);
