@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class Appointment extends JFrame{
 
-    private JLabel label = new JLabel("physical therapy’s Avalable Appointments");
+    private JLabel label = new JLabel("Avalable Appointments");
 
     private JPanel datesPanel;
 
@@ -137,4 +137,5 @@ public class Appointment extends JFrame{
 
     }
 }
+    
 
