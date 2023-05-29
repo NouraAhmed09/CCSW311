@@ -16,6 +16,7 @@ public class HomePage extends JFrame {
     private  JLabel image = new JLabel(imageIcon);
     private JButton bookButton = new JButton("           Booking an Appointment           ");
     private JButton BuyButton = new JButton("           buying tools           ");
+    private JButton ReqButton = new JButton("           request an Assistant           ");
 
     private JMenuBar menuBar = new JMenuBar();
     private JMenu file = new JMenu("File");
@@ -37,11 +38,15 @@ public class HomePage extends JFrame {
         bookButton.setForeground(Color.white);
         BuyButton.setBackground(Color.decode("#5B5B5B"));
         BuyButton.setForeground(Color.white);
+        ReqButton.setBackground(Color.decode("#5B5B5B"));
+        ReqButton.setForeground(Color.white);
 
         add(image);
         add(label);
         add(bookButton);
         add(BuyButton);
+        add(ReqButton);
+
         file.add(close);
         help.add(aboutUs);
         menuBar.add(file);
@@ -70,6 +75,15 @@ public class HomePage extends JFrame {
                 Store store = new Store();
             }
         });
+        
+        ReqButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                setVisible(false);
+
+                NurseRequestForm req = new NurseRequestForm();
+            }
+        });
 
         close.addActionListener(new ActionListener() {
             @Override
@@ -88,4 +102,3 @@ public class HomePage extends JFrame {
     }
       
 }
-
