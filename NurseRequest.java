@@ -182,10 +182,9 @@ public class NurseRequest extends JFrame {
                             "\n\n The approximate Salary: "+SalaryTextField.getText()+"\n\n Your contact Information: "+contactTextField.getText());
                     try {
                         FileWriter file = new FileWriter("NurseRequest.txt",true);
-                        file.write(contactTextField.getText());
-                        file.write(SalaryTextField.getText());
-
-                        file.write("\n"+gender+"\n"+"\n"+Nationality+"\n"+"\n"+Age+"\n");
+                        file.write("contact info: "+contactTextField.getText());
+                        file.write("\nSalary: "+SalaryTextField.getText());
+                        file.write("\nGender: "+gender+",Nationality: "+Nationality+",Age: "+Age+"\n");
                         file.close();
 
                         setVisible(false);
@@ -227,3 +226,4 @@ public class NurseRequest extends JFrame {
     }
 
 }
+
