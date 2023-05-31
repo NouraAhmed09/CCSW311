@@ -29,7 +29,7 @@ public class HomePage extends JFrame {
         setTitle("Needs App");
         setSize(700, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLayout(new FlowLayout(FlowLayout.CENTER,40,50));
+        setLayout(new FlowLayout(FlowLayout.CENTER,10,5));
        getContentPane().setBackground(Color.decode("#7CACC2"));
         setLocationRelativeTo(null);
 
@@ -81,7 +81,7 @@ public class HomePage extends JFrame {
             public void actionPerformed(ActionEvent actionEvent) {
                 setVisible(false);
 
-                NurseRequestForm req = new NurseRequestForm();
+                NurseRequest req = new NurseRequest();
             }
         });
 
@@ -102,3 +102,4 @@ public class HomePage extends JFrame {
     }
       
 }
+
